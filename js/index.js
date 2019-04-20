@@ -9,38 +9,37 @@ const secondStep = document.querySelector('#two')
 const thirdStep = document.querySelector('#three')
 const fourthStep = document.querySelector('#four')
 
+const firstButton = document.querySelector('#firstButton')
+const secondButton = document.querySelector('#secondButton')
+const thirdButton = document.querySelector('#thirdButton')
+const fourthButton = document.querySelector('#fourthButton')
+
+var pages = new Array(firstStep, secondStep, thirdStep, fourthStep);
 
 
-function presentationSteps() {
+function nextPage(){
+  dissapear(firstButton)
+  dissapear(firstStep)
+  appear(secondButton)
+  appear(secondStep)
+}
 
-  if (firstStep.style.display === 'block') {
-    firstStep.style.display = 'none';
-    secondStep.style.display = 'block';
-    console.log('sisa');
-  }else {
-    console.log('nolsa');
-  }
+function nextPage1(){
+  dissapear(secondButton)
+  dissapear(secondStep)
+  appear(thirdButton)
+  appear(thirdStep)
+}
 
-  if (secondStep.style.display === 'block') {
-    secondStep.style.display = 'none';
-    thirdStep.style.display = 'block';
-    console.log('sisa');
-  }else {
-    console.log('nolsa');
-  }
+function nextPage2(){
+  dissapear(thirdButton)
+  dissapear(thirdStep)
+  appear(fourthButton)
+  appear(fourthStep)
+}
 
-  if (thirdStep.style.display === 'block') {
-    thirdStep.style.display = 'none';
-    fourthStep.style.display = 'block';
-    console.log('sisa');
-  }else {
-    console.log('nolsa');
-  }
-
-
-
-
-
+function nextPage3(){
+  console.log('done my nigga');
 }
 
 function start() {

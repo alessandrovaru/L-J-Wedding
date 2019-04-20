@@ -307,6 +307,10 @@ footer{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.first-step-container p{
+  font-size: 50px
+}
+
 .button-continue{
   background-color: red;
   width: 200px;
@@ -319,6 +323,52 @@ footer{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 12
+}
+
+.button-continue1{
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  bottom: -20px;
+  right: -20px;
+  position: absolute;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 11
+}
+
+.button-continue2{
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  bottom: -20px;
+  right: -20px;
+  position: absolute;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10
+}
+
+.button-continue3{
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  bottom: -20px;
+  right: -20px;
+  position: absolute;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9
 }
 
 
