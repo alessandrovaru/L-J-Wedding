@@ -70,4 +70,4 @@ function appear(element) {
   console.log('aparecio');
 }
 
-document.onload = dissapear(firstDisplay);
+// document.onload = dissapear(firstDisplay);

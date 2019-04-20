@@ -134,6 +134,9 @@ footer{
   bottom: 0
 }
 
+
+
+
 @media (max-width:992px) {
   .left {
     top: inherit;
@@ -303,16 +306,25 @@ footer{
   opacity: 0;
   animation: firstStepIn 1s;
   animation-fill-mode: forwards;
+  font-family: 'Merriweather', serif;
   animation-delay: 2s;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.first-step-container p{
-  font-size: 50px
+
+
+a{
+  text-decoration: none;
 }
 
+.button-continue p, .button-continue1 p, .button-continue2 p, .button-continue3 p{
+  font-size: 12px;
+  color: #fff
+}
+
+
 .button-continue{
-  background-color: red;
+  background-color: #690b22;
   width: 200px;
   height: 100px;
   bottom: -20px;
@@ -327,7 +339,7 @@ footer{
 }
 
 .button-continue1{
-  background-color: red;
+  background-color: #690b22;
   width: 200px;
   height: 100px;
   bottom: -20px;
@@ -342,7 +354,7 @@ footer{
 }
 
 .button-continue2{
-  background-color: red;
+  background-color: #690b22;
   width: 200px;
   height: 100px;
   bottom: -20px;
@@ -357,7 +369,7 @@ footer{
 }
 
 .button-continue3{
-  background-color: red;
+  background-color: #690b22;
   width: 200px;
   height: 100px;
   bottom: -20px;
@@ -371,6 +383,171 @@ footer{
   z-index: 9
 }
 
+.behind-button{
+  right: 1px;
+  width: 250px;
+  bottom: 0px;
+}
+
+.right-corner{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #690b22;
+}
+.right-corner span{
+  font-size: 10px
+}
+
+.left-text{
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -80px;
+  top: 270px;
+  color: #690b22;
+  opacity: 0.5;
+}
+
+#two .left-text{
+  left: -160px;
+}
+
+#three .left-text{
+  left: -188px;
+}
+
+#four .left-text{
+  left: -3px;
+}
+
+.center-text{
+  position: absolute;
+  left: 120px;
+  top: 100px;
+}
+
+.center-text h2{
+  color: #690b22;
+  font-weight: bold;
+}
+
+.center-text h3{
+  color: #690b22;
+  font-weight: bold;
+  font-size: 12px
+}
+
+.center-text .info{
+  margin-bottom: 50px
+}
+
+.center-text p{
+  font-size: 10px;
+  width: 250px;
+  color: #690b22;
+}
+
+@media (max-width:992px) {
+  .title-container-left {
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-top: 150px;
+      padding-left: 0;
+  }
+  .title-container-left h1 {
+    font-size: 140px;
+  }
+  .marmol {
+    top: 700px;
+    width: 100vw;
+    opacity: 0
+  }
+
+  .first-step-container {
+    left: 100px;
+    position: absolute;
+    width: 900px;
+    top: -100px;
+    height: 1100px;
+  }
+  .left-text{
+    left: -258px;
+    top: 470px;
+  }
+
+  .left-text h1{
+    font-size: 6.5rem;
+  }
+
+  #two .left-text {
+    left: -394px;
+    top: 500px;
+  }
+
+  #two .left-text h1 {
+    font-size: 5.5rem;
+  }
+
+  #three .left-text {
+    left: -455px;
+    top: 494px;;
+  }
+
+  #three .left-text h1 {
+    font-size: 5.5rem;
+  }
+
+  #four .left-text {
+    left: -59px;
+  }
+
+  .center-text {
+    left: 190px;
+  }
+
+  .center-text h2 {
+    font-size: 60px;
+    margin-bottom: 20px
+  }
+
+  .center-text h3 {
+    color: #690b22;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .center-text p {
+    font-size: 20px;
+    width: 450px;
+    color: #690b22;
+  }
+
+  .button-continue {
+    width: 280px;
+    height: 140px;
+  }
+  .button-continue1 {
+    width: 280px;
+    height: 140px;
+  }
+  .button-continue2 {
+    width: 280px;
+    height: 140px;
+  }
+  .button-continue3 {
+    width: 280px;
+    height: 140px;
+  }
+
+  .button-continue p, .button-continue1 p, .button-continue2 p, .button-continue3 p {
+    font-size: 24px;
+    color: #fff;
+  }
+
+
+
+}
 
 
 
@@ -385,10 +562,11 @@ footer{
 
 @keyframes marmolIn {
   0%{
-    right: -50vw;
+    right: -100vw;
   }
   100%{
     right: 0;
+    opacity: 1
   }
 }
 
