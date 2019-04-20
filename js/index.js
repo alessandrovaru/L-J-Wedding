@@ -14,6 +14,10 @@ const secondButton = document.querySelector('#secondButton')
 const thirdButton = document.querySelector('#thirdButton')
 const fourthButton = document.querySelector('#fourthButton')
 
+const firstButtonLeft = document.querySelector('#firstButtonLeft')
+const secondButtonLeft = document.querySelector('#secondButtonLeft')
+const thirdButtonLeft = document.querySelector('#thirdButtonLeft')
+
 var pages = new Array(firstStep, secondStep, thirdStep, fourthStep);
 
 
@@ -21,21 +25,52 @@ function nextPage(){
   dissapear(firstButton)
   dissapear(firstStep)
   appear(secondButton)
+  appear(firstButtonLeft)
   appear(secondStep)
 }
 
 function nextPage1(){
   dissapear(secondButton)
   dissapear(secondStep)
+  dissapear(firstButtonLeft)
   appear(thirdButton)
+  appear(secondButtonLeft)
   appear(thirdStep)
 }
 
 function nextPage2(){
   dissapear(thirdButton)
   dissapear(thirdStep)
+  dissapear(secondButtonLeft)
   appear(fourthButton)
+  appear(thirdButtonLeft)
   appear(fourthStep)
+}
+
+function lastPage(){
+  appear(firstButton)
+  appear(firstStep)
+  dissapear(secondButton)
+  dissapear(firstButtonLeft)
+  dissapear(secondStep)
+}
+
+function lastPage1(){
+  appear(secondButton)
+  appear(secondStep)
+  appear(firstButtonLeft)
+  dissapear(thirdButton)
+  dissapear(secondButtonLeft)
+  dissapear(thirdStep)
+}
+
+function lastPage2(){
+  appear(thirdButton)
+  appear(thirdStep)
+  appear(secondButtonLeft)
+  dissapear(fourthButton)
+  dissapear(thirdButtonLeft)
+  dissapear(fourthStep)
 }
 
 function nextPage3(){

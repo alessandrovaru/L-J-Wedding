@@ -305,6 +305,7 @@ footer{
   height: 600px;
   opacity: 0;
   animation: firstStepIn 1s;
+  border-radius: .25rem;
   animation-fill-mode: forwards;
   font-family: 'Merriweather', serif;
   animation-delay: 2s;
@@ -322,6 +323,11 @@ a{
   color: #fff
 }
 
+.button-continueLeft p, .button-continue1Left p, .button-continue2Left p{
+  font-size: 12px;
+  color: #fff
+}
+
 
 .button-continue{
   background-color: #690b22;
@@ -330,6 +336,7 @@ a{
   bottom: -20px;
   right: -20px;
   position: absolute;
+  border-radius: .25rem;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   display: flex;
   align-items: center;
@@ -345,6 +352,7 @@ a{
   bottom: -20px;
   right: -20px;
   position: absolute;
+  border-radius: .25rem;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   display: flex;
   align-items: center;
@@ -360,6 +368,7 @@ a{
   bottom: -20px;
   right: -20px;
   position: absolute;
+  border-radius: .25rem;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   display: flex;
   align-items: center;
@@ -375,6 +384,7 @@ a{
   bottom: -20px;
   right: -20px;
   position: absolute;
+  border-radius: .25rem;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   display: flex;
   align-items: center;
@@ -382,6 +392,59 @@ a{
   flex-direction: column;
   z-index: 9
 }
+
+.button-continueLeft{
+  background-color: #85c9be;
+  width: 200px;
+  height: 50px;
+  bottom: 100px;
+  right: -20px;
+  position: absolute;
+  border-radius: .25rem;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 11
+}
+
+.button-continue1Left{
+  background-color: #85c9be;
+  width: 200px;
+  height: 50px;
+  bottom: 100px;
+  right: -20px;
+  position: absolute;
+  border-radius: .25rem;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10
+}
+
+.button-continue2Left{
+  background-color: #85c9be;
+  width: 200px;
+  height: 50px;
+  bottom: 100px;
+  right: -20px;
+  position: absolute;
+  border-radius: .25rem;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9
+}
+
+
+
+
+
 
 .behind-button{
   right: 1px;
@@ -431,6 +494,18 @@ a{
   font-weight: bold;
 }
 
+#four .center-text h2 {
+    font-size: 24px
+}
+
+form{
+      width: 300px;
+}
+
+form button {
+    width: 100%;
+}
+
 .center-text h3{
   color: #690b22;
   font-weight: bold;
@@ -441,10 +516,19 @@ a{
   margin-bottom: 50px
 }
 
+.center-text .info span{
+  margin-left: 10px;
+  color: red
+}
+
 .center-text p{
   font-size: 10px;
   width: 250px;
   color: #690b22;
+}
+.reserva{
+  background-color: #690b22;
+  color: #fff
 }
 
 @media (max-width:992px) {
@@ -545,6 +629,25 @@ a{
     color: #fff;
   }
 
+  form {
+    width: 530px;
+  }
+
+   .input1{
+    height: 90px;
+    font-size: 42px;
+  }
+
+  .findMy{
+    height: 90px;
+    font-size: 24px;
+    background-color: #690b22;
+  }
+
+  #four .center-text h2 {
+    font-size: 45px;
+    margin-bottom: 40px
+  }
 
 
 }
