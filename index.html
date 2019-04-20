@@ -8,25 +8,49 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
   </head>
-  <body>
+  <body id="body">
 
     <section class="welcome">
     </section>
     <div class="logo">
       <img class="img-fluid" src="img/Rings.png" alt="">
     </div>
-    <div class="container-fluid title-container">
-      <h1>Laura & Juan <br>Wedding</h1>
-      <input type="checkbox" name="" value="">
-    </div>
-    <div class="flower-container left">
-      <img class="img-fluid" src="img/planta1.png" alt="">
-    </div>
-    <div class="flower-container right">
-      <img class="img-fluid" src="img/planta2.png" alt="">
+
+    <div id="first">
+      <div class="flower-container left">
+        <img class="img-fluid" src="img/planta1.png" alt="">
+      </div>
+      <div class="flower-container right">
+        <img class="img-fluid" src="img/planta2.png" alt="">
+      </div>
+      <div class="container-fluid title-container">
+        <h1 id="titleText">Laura & Juan <br>Wedding</h1>
+        <input id="GetStart" onclick="start();" type="checkbox" name="" value="">
+      </div>
     </div>
 
-    <footer class="container-fluid"><p>made with love by Venbos © </p></footer> 
+    <div id="secondf">
+      <div class="container-fluid title-container-left">
+        <h1 id="titleText">Laura & Juan <br>Wedding</h1>
+      </div>
+      <div class="marmol">
+        <div class="first-step-container">
+          <p id="one" style="display:block;">1</p>
+          <p id="two" style="display:none;">2</p>
+          <p id="three" style="display:none;">3</p>
+          <p id="four" style="display:none;">4</p>
+          <a onclick="presentationSteps();" href="javascript:;">
+            <div class="button-continue">
+              <p>Continue</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- <footer id="footer" class="container-fluid"><p>made with love by Venbos © </p></footer> -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
