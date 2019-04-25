@@ -105,4 +105,30 @@ function appear(element) {
   console.log('aparecio');
 }
 
+let rb1 = document.getElementById('rb1');
+let rb2 = document.getElementById('rb2');
+let rb3 = document.getElementById('rb3');
+let rb4 = document.getElementById('rb4');
+let friend = document.getElementById('friend');
+let whichFriend = document.getElementById('whichFriend');
+let buttonSubmit = document.getElementById('buttonSubmit');
+
+function assistCheck() {
+  if (rb1.checked == true) {
+    friend.style.display = "block"
+  }else {
+    buttonSubmit.style.display = "block"
+  }
+}
+
+function friendCheck() {
+  if (rb3.checked == true) {
+    whichFriend.style.display = "block";
+    buttonSubmit.style.display = "block"
+  }else {
+    buttonSubmit.style.display = "block"
+  }
+}
+
+
 // document.onload = dissapear(firstDisplay);
