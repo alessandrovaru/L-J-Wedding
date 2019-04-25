@@ -531,7 +531,26 @@ form button {
   color: #fff
 }
 
+.findMy{
+  height: 30px;
+  font-size: 12px;
+  background-color: #690b22;
+}
+
+.centerText .titleAssist h3{
+    color: #690b22;
+    font-weight: bold;
+    font-size: 18px
+}
+
+.centerText .titleAssist input{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
 @media (max-width:992px) {
+
   .title-container-left {
       align-items: center;
       justify-content: flex-start;
@@ -648,6 +667,19 @@ form button {
     font-size: 45px;
     margin-bottom: 40px
   }
+
+.titleAssist .h3{
+      color: #690b22;
+      font-weight: bold;
+      font-size: 38px
+  }
+
+  .vienes {
+        font-size: 34px
+    }
+
+
+
 
 
 }

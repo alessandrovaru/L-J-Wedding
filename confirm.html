@@ -18,7 +18,7 @@
 
 
 
-    <div >
+    <div>
       <div class="container-fluid title-container-left">
         <h1 id="titleText">Laura & Juan <br>Wedding</h1>
       </div>
@@ -28,48 +28,34 @@
           <div id="confirm" style="display:block;">
             <div class="center-text">
               <div class="info">
-                <form name="confirm">
-                  <div id="vienes" class="form-group">
-                    <h3>Vienes? </h3>
-                    <input onchange="assistCheck()" id="rb1" name="assist" type="radio" value="yes">yes </input>
+                <form class="titleAssist" name="confirm">
+                  <div id="vienes" class="form-group vienes">
+                    <h3 class="h3">Vienes?</h3>
+                    <input class="input" onchange="assistCheck()" id="rb1" name="assist" type="radio" value="yes"> yes</input>
                     <br>
-                    <input onchange="assistCheck()" id="rb2" name="assist" type="radio" value="no">no </input>
+                    <input class="input" onchange="assistCheck()" id="rb2" name="assist" type="radio" value="no"> no</input>
                   </div>
 
-                  <div id="friend" style="display:none;" class="form-group">
-                    <h3>Traes a alguien mas </h3>
-                    <input onchange="friendCheck()" id="rb3" name="assist" type="radio" value="yes">yes </input>
+                  <div id="friend" style="display:none;" class="form-group vienes">
+                    <h3 class="h3">Traes a alguien mas</h3>
+                    <input class="input" onchange="friendCheck()" id="rb3" name="assist" type="radio" value="yes"> yes</input>
                     <br>
-                    <input onchange="friendCheck()" id="rb4" name="assist" type="radio" value="no">no </input>
+                    <input class="input" onchange="friendCheck()" id="rb4" name="assist" type="radio" value="no"> no</input>
                   </div>
 
-                  <div id="whichFriend" style="display:none;" class="form-group">
-                    <h3>Nombre y apellido (Si son varios separar con comas) </h3>
+                  <div id="whichFriend" style="display:none;" class="form-group vienes">
+                    <h3 class="h3">Nombre y apellido (Si son varios separar con comas)</h3>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
 
-                  <button style="display:none;" id="buttonSubmit" type="button" name="button">Enviar</button>
+                  <button class="btn btn-primary findMy" style="display:none;" id="buttonSubmit" type="button" name="button">Enviar</button>
 
                 </form>
               </div>
             </div>
           </div>
 
-          <a id="firstButton" href="javascript:nextPage()">
-            <div class="button-continue">
-              <p>Continue</p>
-            </div>
-          </a>
-          <a id="secondButton" href="javascript:nextPage1()">
-            <div class="button-continue1">
-              <p>Continue</p>
-            </div>
-          </a>
-          <a id="thirdButton" href="javascript:nextPage2()">
-            <div class="button-continue2">
-              <p>Continue</p>
-            </div>
-          </a>
+
           <a id="fourthButton" href="javascript:nextPage3()">
             <div class="button-continue3">
               <p> <3 </p>
